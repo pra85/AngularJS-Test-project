@@ -2,7 +2,7 @@
 
 var mainmodule = angular.module('dashboard', ['ngRoute','ui.bootstrap','angularFileUpload']);
 
-mainmodule.config(function($routeProvider/*, $locationProvider*/) {
+mainmodule.config(function($routeProvider, $locationProvider) {
 		$routeProvider
 
 			
@@ -61,5 +61,5 @@ mainmodule.config(function($routeProvider/*, $locationProvider*/) {
 				redirectTo: '/'
 			});
 
-			/*$locationProvider.html5Mode(true);*/
+			$locationProvider.html5Mode(true);
 	});

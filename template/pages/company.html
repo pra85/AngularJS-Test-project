@@ -1,6 +1,6 @@
 <section ng-contorller="companycontroller" >
 	 <br/>
-				<div class="centers" ><img class="img-main"  ng-src="{{editData.image}}" /></div>
+				<div class="centers" ><img class="img-main img-responsive"  ng-src="{{editData.image}}" /></div>
 
 
 <!-- START Page content-->
@@ -63,7 +63,7 @@
 <ram class="col-lg-12 col-md-12 col-col-sm-12 col-xs-12">
    <div class="centers belowmar special-row" ng-controller="dashboardandgridAPIFetchCtrl" >
                <div class="special-cols" ng-repeat="image in imageURL.URLz track by $index" >
-                  <a href="#/product/{{$index}}" ><img ng-click="profilePic(image)" ng-src="{{image}}" /></a>
+                  <a href="/NEW.html#/product/{{$index}}" ><img ng-click="profilePic(image)" ng-src="{{image}}" /></a>
                </div>
               </ram>
 </div>

@@ -1,3 +1,4 @@
+// Service for fetching API data and returning it to controller as a function
 mainmodule.factory('apiFetching', function($http) {
 
 var apiURLs = 'http://www.json-generator.com/api/json/get/cjXJnSRydK?indent=2';
