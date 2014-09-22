@@ -1,0 +1,32 @@
+.box {
+  color: #f938ab;
+}
+.box div {
+  background: #f938ab;
+}
+.boxnew {
+  color: #f938ab;
+}
+.boxnew div {
+  background: #f938ab;
+}
+.boxfull {
+  color: #f938ab;
+}
+.boxfull div {
+  background: #f938ab;
+}
+@media screen {
+  .boxfull {
+    color: #ff00ff;
+  }
+}
+@media screen and (min-width: 1px) {
+  .boxfull {
+    background: #f938ab;
+  }
+}
+.boxdash {
+  background: #f97cff;
+  padding: 20px;
+}

@@ -1,0 +1,26 @@
+@base: #f938ab;
+@new: @base + #04a;
+@pad: 10px + 10;
+.box {
+  color: @base;
+  div { background:  @base ;}
+}
+
+.boxnew {
+	.box;
+}
+
+.boxfull {
+	.box;
+	@media screen {
+	color:#ff00ff;
+	@media (min-width:1px){
+ 		background: @base;
+	  }
+	}
+
+}
+.boxdash {
+	background:@new;
+	padding:@pad;
+}
