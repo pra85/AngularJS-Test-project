@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie ie6 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie ie7 lt-ie9 lt-ie8"        lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie ie8 lt-ie9"               lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie ie9"                      lang="en"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-ie" ng-app="dashboard" ng-cloak>
+<!--<![endif]-->
+
+<head>
+<!-- <base href="/Dashboard/NEW.html"> -->
+   <!-- Meta-->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <meta name="author" content="">
+   <title>47Admin - Bootstrap Admin Skin</title>
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+   <!-- Bootstrap CSS-->
+   <link rel="stylesheet" href="app/css/bootstrap.css">
+   <!-- Vendor CSS-->
+   <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.min.css">
+   <link rel="stylesheet" href="vendor/animo/animate+animo.css">
+   <link rel="stylesheet" href="vendor/csspinner/csspinner.min.css">
+   <!-- START Page Custom CSS-->
+   <!-- END Page Custom CSS-->
+   <!-- App CSS-->
+   <link rel="stylesheet" href="app/css/app.css">
+   <!-- Modernizr JS Script-->
+   <script src="vendor/modernizr/modernizr.js" type="application/javascript"></script>
+   <!-- FastClick for mobiles-->
+   <script src="vendor/fastclick/fastclick.js" type="application/javascript"></script>
+</head>
+
+<body>
+   <!-- START Main wrapper-->
+   <section class="wrapper">
+      <!-- START Top Navbar-->
+      <nav role="navigation" class="navbar navbar-default navbar-top navbar-fixed-top">
+         <!-- START navbar header-->
+         <div class="navbar-header">
+            <a href="#" class="navbar-brand">
+               <div class="brand-logo">47Admin</div>
+               <div class="brand-logo-collapsed">47</div>
+            </a>
+         </div>
+         <!-- END navbar header-->
+         <!-- START Nav wrapper-->
+         <div class="nav-wrapper">
+            <!-- START Left navbar-->
+            <ul class="nav navbar-nav">
+               <li>
+                  <a href="#" data-toggle="aside">
+                     <em class="fa fa-align-left"></em>
+                  </a>
+               </li>
+                
+                 <li>
+                  <a href="#/" >Dashboard</a>
+               </li>
+
+               <li>
+                  <a href="#/inbox" >Inbox</a>
+               </li>
+
+                <li>
+                  <a href="#/timeline" >Timeline</a>
+               </li>
+               <li>
+                  <a href="#/feedback" >Feedback</a>
+               </li>
+
+            </ul>
+            <!-- END Left navbar-->
+            <!-- START Right Navbar-->
+          
+          <navright></navright>
+         
+
+            <!-- END Right Navbar-->
+         </div>
+         <!-- END Nav wrapper-->
+         <!-- START Search form-->
+         <form role="search" class="navbar-form">
+            <div class="form-group has-feedback">
+               <input type="text" placeholder="Type and hit Enter.." class="form-control">
+               <div data-toggle="navbar-search-dismiss" class="fa fa-times form-control-feedback"></div>
+            </div>
+            <button type="submit" class="hidden btn btn-default">Submit</button>
+         </form>
+         <!-- END Search form-->
+      </nav>
+      <!-- END Top Navbar-->
+      <!-- START aside-->
+      <aside class="aside">
+         <!-- START Sidebar (left)-->
+         <nav class="sidebar">
+            
+            <sideleft></sideleft>
+         
+         </nav>
+         <!-- END Sidebar (left)-->
+      </aside>
+      <!-- End aside-->
+
+
+
+      <!-- START aside-->
+      
+      <!-- END aside-->
+
+
+
+      <!-- START Main section-->
+   <section>
+          <div ng-view></div>
+   </section>
+   <!-- END Main wrapper-->
+
+
+
+   <!-- START Scripts-->
+   <!-- Main vendor Scripts-->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+   <!-- Plugins-->
+   <script src="vendor/chosen/chosen.jquery.min.js"></script>
+   <script src="vendor/slider/js/bootstrap-slider.js"></script>
+   <script src="vendor/filestyle/bootstrap-filestyle.min.js"></script>
+   <!-- Animo-->
+   <script src="vendor/animo/animo.min.js"></script>
+   <!-- Sparklines-->
+   <script src="vendor/sparklines/jquery.sparkline.min.js"></script>
+   <!-- Slimscroll-->
+   <script src="vendor/slimscroll/jquery.slimscroll.min.js"></script>
+   <!-- START Page Custom Script-->
+   <!-- END Page Custom Script-->
+   <!-- App Main-->
+   <script src="app/js/app.js"></script>
+   <!-- END Scripts-->
+  <script src="app/js/APImimic.js"></script>
+  <script src="app/lib/file-upload/angular-file-upload-shim.min.js"></script> 
+  <script src="app/lib/angular/angular.js"></script>
+  <script src="app/lib/angular/angular-route.min.js"></script>
+  <script src="app/js/apps.js"></script>
+  <script src="app/js/services/apiFetchingservice.js"></script>
+  <script src="app/js/controllers/uicontrollers.js"></script>
+  <script src="app/js/controllers/feedbackcontroller.js"></script>
+  <script src="app/js/controllers/companysearchcontroller.js"></script>
+  <script src="app/js/controllers/companycontroller.js"></script>
+  <script src="app/js/controllers/profileeditproductController.js"></script>
+  <script src="app/js/controllers/dashboardandgridAPIFetchcontroller.js"></script> 
+  <script src="app/js/controllers/formcontroller.js"></script>
+  <script src="app/js/controllers/Fileuploadcontrollers.js"></script>
+  <script src="app/js/controllers/searchcontrollers.js"></script>
+  <script src="app/js/filters.js"></script>
+  <script src="app/js/directives/navbar-right.js"></script>
+  <script src="app/js/directives/sidebar-left.js"></script>
+  <script src="vendor/bootstrap/js/ui-bootstrap-0.11.0.min.js"></script>
+  <script src="app/lib/file-upload/angular-file-upload.min.js"></script> 
+</body>
+
+</html>

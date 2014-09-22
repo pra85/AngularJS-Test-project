@@ -1,0 +1,32 @@
+<section ng-contorller="searchcontroller" >
+	 
+				
+
+<!-- START Page content-->
+         <section class="main-content">
+              <div class="row"   >
+             
+              
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="row"   >
+                    <div class="col-lg-5">
+                      <input type="text" class="searches form-control" ng-model="mains.querys" ng-change="debounce()" placeholder="Type your Search Query here" /><br/>
+                    </div>
+                  </div> <div class="clearfix" ></div>
+                  <h3 class="centers" > <span ng-show="forS" >Search Results for</span> {{mains.querys}} </h3>
+
+                  <div class="clearfix" ></div>
+                    <div class="special-col" ng-repeat="image in imageURLnew | filter : mains.querys" >
+                      <a href="#/profile/{{$index}}" ng-click="profilePic(image.images)" ><img ng-src="{{image.images}}" /></a>
+                   </div>
+                 </div>
+               </div> 
+ 			       </div> 
+            </div> 
+         </section>
+
+         <!-- END Page content-->
+		 
+</section>

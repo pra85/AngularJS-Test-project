@@ -1,0 +1,49 @@
+<section ng-contorller="profileeditproductCtrls" >
+	 
+				
+
+<!-- START Page content-->
+         <section class="main-content">
+            <div class="col-lg-6">
+                        <div class="panel panel-default">
+                           
+                              <div class="panel-body">
+                        <h3>User Image</h3>
+                   <img class="img-main"  ng-src="{{editData.image}}" />
+
+
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 			 <div class="col-lg-6">
+                        <div class="panel panel-default">
+                           
+                              <div class="panel-body">
+                              <a href="#/edit" class="pull-right btn btn-labeled btn-primary" ng-click="profilePic(imageURLz.URLz[valuereal])" >Edit</a>
+                         <h3>User Details</h3>
+                         <div class="form-group">
+                         <label>Father Name :</label> 
+                         <span class="faname" >{{editData.name}}</span>                      
+                         </div>
+                         <div class="form-group">
+                         <label>Date of Birth :</label>
+                              <span class="moname" >{{editData.dOB}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Strength :</label>
+                              <span class="siname" >{{editData.strength}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Brother ID :</label>
+                              <span class="brname" >{{editData.iD}}</span> 
+						 </div>
+
+ 					</div>
+ 				</div>
+ 			</div>
+         </section>
+
+         <!-- END Page content-->
+		 
+</section>

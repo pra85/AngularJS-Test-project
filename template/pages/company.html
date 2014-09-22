@@ -1,0 +1,74 @@
+<section ng-contorller="companycontroller" >
+	 <br/>
+				<div class="centers" ><img class="img-main"  ng-src="{{editData.image}}" /></div>
+
+
+<!-- START Page content-->
+         <section class="main-content">
+            <div class="col-lg-6">
+                        <div class="panel panel-default">
+                           
+                              <div class="panel-body">
+                       <h3>Company Information</h3>
+                     <div class="form-group">
+                         <label>Founder Father's Name :</label> 
+                         <span class="faname" >{{editData.name}}</span>                      
+                         </div>
+                         <div class="form-group">
+                         <label>Date of First Business :</label>
+                              <span class="moname" >{{editData.dOB}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Attrition Rate :</label>
+                              <span class="siname" >{{editData.strength}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Number of Buildings :</label>
+                              <span class="brname" >{{editData.iD}}</span> 
+             </div>
+
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 			 <div class="col-lg-6">
+                        <div class="panel panel-default">
+                           
+                              <div class="panel-body">
+                               
+                         <h3>Company Profile</h3>
+                         <div class="form-group">
+                         <label>Founder Name :</label> 
+                         <span class="faname" >{{editData.name}}</span>                      
+                         </div>
+                         <div class="form-group">
+                         <label>Date of Inception :</label>
+                              <span class="moname" >{{editData.dOB}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Branding presence :</label>
+                              <span class="siname" >{{editData.strength}}</span> 
+                         </div>
+                         <div class="form-group">
+                         <label>Employees :</label>
+                              <span class="brname" >{{editData.iD}}</span> 
+						 </div>
+
+ 					</div>
+ 				</div>
+ 			</div>
+         </section>
+
+<div class="row" >
+<ram class="col-lg-12 col-md-12 col-col-sm-12 col-xs-12">
+   <div class="centers belowmar special-row" ng-controller="dashboardandgridAPIFetchCtrl" >
+               <div class="special-cols" ng-repeat="image in imageURL.URLz track by $index" >
+                  <a href="#/product/{{$index}}" ><img ng-click="profilePic(image)" ng-src="{{image}}" /></a>
+               </div>
+              </ram>
+</div>
+
+
+         <!-- END Page content-->
+		 
+</section>

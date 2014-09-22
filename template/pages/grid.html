@@ -1,0 +1,43 @@
+<section>
+         <!-- START Page content-->
+         <section class="main-content">
+            
+            <h3>Dashboard
+               <br>
+               <small>Welcome user</small>
+            </h3>
+            <div data-toggle="notify" data-onload="" data-message="<b>New Updates Available!</b> Don't forget to check them!" data-options="{&quot;status&quot;:&quot;danger&quot;, &quot;pos&quot;:&quot;top-right&quot;}" class="hidden-xs"></div>
+            <div class="row">
+               <!-- START dashboard main content-->
+               <div class="col-md-12">
+                   
+                  <!-- START chart-->
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="panel panel-default">
+                           
+                              <div class="panel-body">
+                               
+               <div class="row" ng-controller="dashboardandgridAPIFetchCtrl" >
+               <div class="special-col" ng-repeat="image in imageURL.URLz track by $index" >
+                  <a href="#/profile/{{$index}}" ><img ng-click="profilePic(image)" ng-src="{{image}}" /></a>
+               </div>
+               </div>
+
+                               </div>
+                              
+                        </div>
+                     </div>
+                  </div>
+                  <!-- END chart-->
+                   
+                  
+               </div>
+               <!-- END dashboard main content-->
+               <!-- START dashboard sidebar-->
+                
+               <!-- END dashboard sidebar-->
+            </div>
+         </section>
+         <!-- END Page content-->
+      </section>
